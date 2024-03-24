@@ -15,7 +15,7 @@ const root = createRoot(domNode);
 const App = () => {
 	const [dateDefault, setDateDefault] = useState(defaultArticleState);
 	return (
-		<div
+		<main
 			className={clsx(styles.main)}
 			style={
 				{
@@ -28,7 +28,7 @@ const App = () => {
 			}>
 			<ArticleParamsForm date={setDateDefault} />
 			<Article />
-		</div>
+		</main>
 	);
 };
 
